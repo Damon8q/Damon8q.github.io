@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      PIL | Damon
+      ssh-无密传输 | Damon
     
   </title>
   <meta name="author" content="Damon.Lou">
@@ -115,7 +115,7 @@
 				<!-- Page title -->
 				<p>
 					
-						当前文章&nbsp;:&nbsp;《PIL》
+						当前文章&nbsp;:&nbsp;《ssh-无密传输》
 					
 				</p>
 				<!-- Progress bar -->
@@ -278,8 +278,8 @@
 	
 	<div class="article-title">
 		
-	<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" itemprop="url">
-		PIL
+	<a href="/2019/03/22/ssh 无密登陆传输/" itemprop="url">
+		ssh-无密传输
 	</a>
 
 	</div>
@@ -288,17 +288,17 @@
 		<span>
 			
 	发布于
-	<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" itemprop="url">
-		<time datetime="2019-03-19T10:21:57.000Z" itemprop="datePublished">
-	  		2019-03-19
+	<a href="/2019/03/22/ssh 无密登陆传输/" itemprop="url">
+		<time datetime="2019-03-22T10:24:47.000Z" itemprop="datePublished">
+	  		2019-03-22
 	  </time>
 	</a> 
 
 	/
 	更新于
-	<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" itemprop="url">
-		<time datetime="2019-03-19T10:21:57.000Z" itemprop="dateUpdated">
-	  		2019-03-19
+	<a href="/2019/03/22/ssh 无密登陆传输/" itemprop="url">
+		<time datetime="2019-03-22T10:24:47.000Z" itemprop="dateUpdated">
+	  		2019-03-22
 	  </time>
 	</a> 	
 
@@ -311,7 +311,7 @@
 		/
 		
 
-    <span class="leancloud_visitors" id="/2019/03/19/PIL、matplotlib.pyplot处理数组/_visitors" data-url="/2019/03/19/PIL、matplotlib.pyplot处理数组/" data-title="PIL">
+    <span class="leancloud_visitors" id="/2019/03/22/ssh 无密登陆传输/_visitors" data-url="/2019/03/22/ssh 无密登陆传输/" data-title="ssh-无密传输">
         热度
         <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
     </span>
@@ -320,7 +320,7 @@
 
 
 
-    <span class="leancloud_likes" id="/2019/03/19/PIL、matplotlib.pyplot处理数组/_likes" data-url="/2019/03/19/PIL、matplotlib.pyplot处理数组/" data-title="PIL" rel="unlike">
+    <span class="leancloud_likes" id="/2019/03/22/ssh 无密登陆传输/_likes" data-url="/2019/03/22/ssh 无密登陆传输/" data-title="ssh-无密传输" rel="unlike">
         喜欢
         <i class="fa fa-heart"></i>
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -329,62 +329,10 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>PIL 从数组生成 png——image:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import numpy as np<br>from PIL import Image<br>import PIL<br>from PIL import ImageColor</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>array = np.random.rand(5,5)<br>array<br>array([[0.69005954, 0.9798786 , 0.740175  , 0.13881539, 0.03096414],<br>       [0.72429578, 0.64834406, 0.73773885, 0.63767163, 0.22396614],<br>       [0.08232822, 0.17567016, 0.79140838, 0.30306542, 0.87842127],<br>       [0.4441358 , 0.0787538 , 0.77434104, 0.47989743, 0.83994187],<br>       [0.11994737, 0.27439975, 0.28549427, 0.0926461 , 0.2772941 ]])<br>mask =  PIL.Image.fromarray(np.uint8(asa))<br>mask </p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="mask-便是一个随机的-灰度图像"><a href="#mask-便是一个随机的-灰度图像" class="headerlink" title="mask 便是一个随机的 灰度图像"></a>mask 便是一个随机的 灰度图像</h2><blockquote>
-<blockquote>
-<blockquote>
-<p>mask =  PIL.Image.fromarray(np.uint8(plt.cm.jet(asa)*255))</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>#(plt.cm.jet(asa)*255) 是一个四维数组 生成的图像是带有颜色的</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>mask_array_2 = np.where( array == int_class ,255 ,0)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="array-int-class-作为判断，-255-如果符合条件-此时的像素-255，-不符合-0"><a href="#array-int-class-作为判断，-255-如果符合条件-此时的像素-255，-不符合-0" class="headerlink" title="array == int_class :作为判断， 255: 如果符合条件 此时的像素 ==255， 不符合 ==0"></a>array == int_class :作为判断， 255: 如果符合条件 此时的像素 ==255， 不符合 ==0</h1><p>#掩码图像的数组</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>mask_2 = PIL.Image.fromarray(np.uint8(array), mode=’L’)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>#根据数组生成 掩码图像的灰度图</p>
-<p>#灰度图像中 符合条件的部分显示为白色 不符合条件的部分为黑色</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>im = PIL.Image.new(‘RGBA’, acc_norm.shape[::-1][:2], color=None)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>#新建一个底图，后续会把前面合成的图像粘贴过来，由于掩码层的的存在，会显示在掩码层为255的值 所对应的图像的数据</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>im.paste(image)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>#粘贴</p>
+		<p>#无密传输，多用于<br>1.生成 ssh-keygen 密匙：<br>    ssh-keygen </p>
+<pre><code>#Enter passphrase (empty for no passphrase):  
+#Enter same passphrase again:  
+</code></pre><p>2.使用 ssh-copy-id 将公匙拷贝至远程主机<br>    ssh-copy-id -i ~/.ssh/id_rsa.pub root@<em>.</em>.<em>.</em><br>    (root: 主机用户名)<br>    (<em>.</em>.<em>.</em> : 为远程主机ip 地址)<br>3.ssh来执行远程传输或者登陆：<br>    ssh root@<em>.</em>.<em>.</em><br>    rsync ssh /home/test.py root@<em>.</em>.<em>.</em>:/home/data<br>    (/home/test.py : 本机文件路径 )<br>    (root@<em>.</em>.<em>.</em>:/home/data : 服务器 用户名 ip 路径 )   </p>
 	
 	</div>
 	
@@ -402,12 +350,8 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/03/22/ssh 无密登陆传输/" title="ssh-无密传输" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2019/03/19/numpy/" title="Numpy" rel="next">
+			<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" title="PIL" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -425,18 +369,27 @@
 		
 				<li>
 					<div>
-						<a href="/2019/03/22/ssh 无密登陆传输/" title="ssh-无密传输">
-							ssh-无密传输
+						<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" title="PIL">
+							PIL
 						</a>
 						<p>
-							#无密传输，多用于1.生成 ssh-keygen 密匙：    ssh-keygen 
-#Enter passphrase (empty for no passphrase):  
-#Enter same passphrase aga...
+							PIL 从数组生成 png——image:
+
+
+
+import numpy as npfrom PIL import Imageimport PILfrom PIL import ImageColor
+
+
+
+
+
+
+array = np...
 						</p>
 					</div>
 
-					<a href="/2019/03/22/ssh 无密登陆传输/" title="ssh-无密传输">				
-						<img src="/img/cart_cover.jpg" class="relateImg" alt="ssh-无密传输">
+					<a href="/2019/03/19/PIL、matplotlib.pyplot处理数组/" title="PIL">				
+						<img src="/img/cart_cover.jpg" class="relateImg" alt="PIL">
 					</a>
 				</li>											
 		
@@ -599,13 +552,6 @@ array = np.array([[ 0,  1,  2,  3,  4],                  [ 5,  6,  7,  8,  9],  
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
-
-		
-
-		<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-		<script src="/plugin/toc/katelog.min.js"></script>
-
-		
 	
 		</main>
 		
