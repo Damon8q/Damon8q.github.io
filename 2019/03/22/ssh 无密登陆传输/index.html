@@ -332,8 +332,13 @@
 		<p>#无密传输，多用于<br>1.生成 ssh-keygen 密匙：<br>    ssh-keygen </p>
 <pre><code>#Enter passphrase (empty for no passphrase):  
 #Enter same passphrase again:  
-</code></pre><p>2.使用 ssh-copy-id 将公匙拷贝至远程主机<br>    ssh-copy-id -i ~/.ssh/id_rsa.pub root@<em>.</em>.<em>.</em><br>    (root: 主机用户名)<br>    (<em>.</em>.<em>.</em> : 为远程主机ip 地址)<br>3.ssh来执行远程传输或者登陆：<br>    ssh root@<em>.</em>.<em>.</em><br>    rsync ssh /home/test.py root@<em>.</em>.<em>.</em>:/home/data<br>    (/home/test.py : 本机文件路径 )<br>    (root@<em>.</em>.<em>.</em>:/home/data : 服务器 用户名 ip 路径 )   </p>
-	
+</code></pre><p>2.使用 ssh-copy-id 将公匙拷贝至远程主机<br>    ssh-copy-id -i ~/.ssh/id_rsa.pub root@<em>.</em>.<em>.</em>   </p>
+<pre><code>#(root: 主机用户名)  
+#(*.*.*.* : 为远程主机ip 地址)  
+</code></pre><p>3.ssh来执行远程传输或者登陆：<br>    ssh root@<em>.</em>.<em>.</em><br>    rsync ssh /home/test.py root@<em>.</em>.<em>.</em>:/home/data  </p>
+<pre><code>#(/home/test.py : 本机文件路径 )  
+#(root@*.*.*.*:/home/data : 服务器 用户名 ip 路径 )   
+</code></pre>	
 	</div>
 	
 	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
