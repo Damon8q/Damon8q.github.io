@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      hexo搭建个人网站 | Damon
+      VMware 虚拟机Linux空间拓展 | Damon
     
   </title>
   <meta name="author" content="Damon.Lou">
@@ -115,7 +115,7 @@
 				<!-- Page title -->
 				<p>
 					
-						当前文章&nbsp;:&nbsp;《hexo搭建个人网站》
+						当前文章&nbsp;:&nbsp;《VMware 虚拟机Linux空间拓展》
 					
 				</p>
 				<!-- Progress bar -->
@@ -278,8 +278,8 @@
 	
 	<div class="article-title">
 		
-	<a href="/2019/03/14/hexo搭建个人网站/" itemprop="url">
-		hexo搭建个人网站
+	<a href="/2019/03/25/VMware虚拟机根目录空间扩充/" itemprop="url">
+		VMware 虚拟机Linux空间拓展
 	</a>
 
 	</div>
@@ -288,17 +288,17 @@
 		<span>
 			
 	发布于
-	<a href="/2019/03/14/hexo搭建个人网站/" itemprop="url">
-		<time datetime="2019-03-14T07:00:29.000Z" itemprop="datePublished">
-	  		2019-03-14
+	<a href="/2019/03/25/VMware虚拟机根目录空间扩充/" itemprop="url">
+		<time datetime="2019-03-25T03:44:13.000Z" itemprop="datePublished">
+	  		2019-03-25
 	  </time>
 	</a> 
 
 	/
 	更新于
-	<a href="/2019/03/14/hexo搭建个人网站/" itemprop="url">
-		<time datetime="2019-03-14T07:00:29.000Z" itemprop="dateUpdated">
-	  		2019-03-19
+	<a href="/2019/03/25/VMware虚拟机根目录空间扩充/" itemprop="url">
+		<time datetime="2019-03-25T03:44:13.000Z" itemprop="dateUpdated">
+	  		2019-03-25
 	  </time>
 	</a> 	
 
@@ -311,7 +311,7 @@
 		/
 		
 
-    <span class="leancloud_visitors" id="/2019/03/14/hexo搭建个人网站/_visitors" data-url="/2019/03/14/hexo搭建个人网站/" data-title="hexo搭建个人网站">
+    <span class="leancloud_visitors" id="/2019/03/25/VMware虚拟机根目录空间扩充/_visitors" data-url="/2019/03/25/VMware虚拟机根目录空间扩充/" data-title="VMware 虚拟机Linux空间拓展">
         热度
         <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
     </span>
@@ -320,7 +320,7 @@
 
 
 
-    <span class="leancloud_likes" id="/2019/03/14/hexo搭建个人网站/_likes" data-url="/2019/03/14/hexo搭建个人网站/" data-title="hexo搭建个人网站" rel="unlike">
+    <span class="leancloud_likes" id="/2019/03/25/VMware虚拟机根目录空间扩充/_likes" data-url="/2019/03/25/VMware虚拟机根目录空间扩充/" data-title="VMware 虚拟机Linux空间拓展" rel="unlike">
         喜欢
         <i class="fa fa-heart"></i>
         <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
@@ -329,7 +329,29 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>一、GitHub 操作：<br>    1.在GitHub 官网注册一个GitHub的账号（由于在 Github Pages 可以免费托管博客）<br>    2.在GitHub 账户界面创建一个新的存储库<br>    3.GitHub 新的储存库名称设置为 : “你的GitHub 用户名” / “你的GitHub 用户名.github.io” (这一步很重要，否则后续无法，连接储存库)<br>  存储库创建完毕<br>二、本地安装 hexo<br>    1.node.js 安装 :<br>        <a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a><br>    2.git 安装:<br>    3.hexo 安装：(终端执行)<br>        npm install hexo-cli -g<br>    4.本地静态hexo博客:<br>        (1) 初始化博客目录:<br>            hexo init “你的用户名“.github.io  (“你的用户名“ 是英文 中文后续肯能有影响 )<br>        (2) 进入博客目录:<br>            cd “你的用户名“.github.io<br>        (3) 部署博客基本框架:<br>            npm install</p>
+		<h1 id="声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"><a href="#声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。" class="headerlink" title="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"></a>声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。</h1><p>关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小<br>打开虚拟机。root登陆<br>终端输入：<br>        fdisk -l<br>        “查看分区目录”<br>        继续键入：<br>                n<br>                “ 命令 n 用于添加新分区 “<br>        继续键入：<br>                p<br>                “命令 n 用于添加新分区 “<br>        继续键入：<br>                3<br>                “fdisk 会让你选择主分区的编号，如果已经有了主分区 sda1 ， sda2 ，那么编号就选3 ，即要创建的该分区为 sda3<br>                fdisk 又会让你选择该分区的开始值这个就是分区的 Start 值（ start cylinder ）；这里最好直接按回车，如果您输入了一个非默认的数字，可能会造成空间浪费”<br>        等待完成，继续键入：<br>                t<br>                “改变分区系统id”<br>        继续键入：<br>                3<br>                “指定分区号”<br>        继续键入：<br>                8e<br>                “指定要改成的id号，8e代表LVM”<br>        继续键入：w<br>                “保存”<br>终端输入：<br>        fdisk -l<br>        “查看新的分区大小以及支持格式”<br>终端输入：<br>        mkfs -t ext3 /dev/sda3<br>        “格式化分区目录”<br>终端输入：<br>        lvs<br>        pvcreate /dev/sda3<br>        vgextend centos /dev/sda3<br>        “其中 centos 是需要扩充的目录组   可以通过df -h 查看  例如我的 /dev/mapper/centos-root  centos 为组 ”<br>终端输入：<br>        vgdisplay<br>        “主要查看 Free  PE / Size       8960 / 35.00 GiB，说明我们最多可以有35.00 G的扩充空间”<br>终端输入：<br>        lvextend -L +34.7G /dev/centos/root /dev/sda3<br>        “扩充我们想要增加的大小，做好稍微余留一些 避免出现分区不足的错误“<br>终端输入：<br>        vim /etc/fstab<br>        “查看拓展组中 逻辑卷 的文件系统“<br>        e2fsck -f /dev/centos/root<br>        出现”/dev/mapper/centos-root is mounted.  e2fsck: 无法继续, 中止.” 继续进行</p>
+<pre><code>    如果是 逻辑卷文件系统 xfs:
+    终端输入：
+            xfs_growfs  /dev/centos/root 
+    如果是 逻辑卷文件系统 ext3:
+    终端输入：
+            resize2fs /dev/centos/root 
+            输出如下 “
+            meta-data=/dev/mapper/centos-root isize=512    agcount=4, agsize=2424320 blks
+                    =                       sectsz=512   attr=2, projid32bit=1
+                    =                       crc=1        finobt=0 spinodes=0
+            data     =                       bsize=4096   blocks=9697280, imaxpct=25
+                    =                       sunit=0      swidth=0 blks
+            naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+            log      =internal               bsize=4096   blocks=4735, version=2
+                    =                       sectsz=512   sunit=0 blks, lazy-count=1
+            realtime =none                   extsz=4096   blocks=0, rtextents=0
+            data blocks changed from 9697280 to 18741248
+            ”
+    终端输入：
+            df -h 
+            “查看内存情况”
+</code></pre><p>##ok！</p>
 	
 	</div>
 	
@@ -347,12 +369,8 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/03/14/GDAL读取tiff/" title="GDAL读取tiff" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2019/03/12/hello-world/" title="Hello World" rel="next">
+			<a href="/2019/03/22/ssh 无密登陆传输/" title="ssh-无密传输" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -367,22 +385,6 @@
 
 <div class="relate-post">
 	<ul>
-		
-				<li>
-					<div>
-						<a href="/2019/03/25/VMware虚拟机根目录空间扩充/" title="VMware 虚拟机Linux空间拓展">
-							VMware 虚拟机Linux空间拓展
-						</a>
-						<p>
-							声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        fdisk ...
-						</p>
-					</div>
-
-					<a href="/2019/03/25/VMware虚拟机根目录空间扩充/" title="VMware 虚拟机Linux空间拓展">				
-						<img src="/img/cart_cover.jpg" class="relateImg" alt="VMware 虚拟机Linux空间拓展">
-					</a>
-				</li>											
-		
 		
 				<li>
 					<div>
@@ -461,6 +463,22 @@ array = np.array([[ 0,  1,  2,  3,  4],                  [ 5,  6,  7,  8,  9],  
 
 					<a href="/2019/03/14/GDAL读取tiff/" title="GDAL读取tiff">				
 						<img src="/img/cart_cover.jpg" class="relateImg" alt="GDAL读取tiff">
+					</a>
+				</li>											
+		
+		
+				<li>
+					<div>
+						<a href="/2019/03/14/hexo搭建个人网站/" title="hexo搭建个人网站">
+							hexo搭建个人网站
+						</a>
+						<p>
+							一、GitHub 操作：    1.在GitHub 官网注册一个GitHub的账号（由于在 Github Pages 可以免费托管博客）    2.在GitHub 账户界面创建一个新的存储库    3.GitHub 新的储存库名称设置...
+						</p>
+					</div>
+
+					<a href="/2019/03/14/hexo搭建个人网站/" title="hexo搭建个人网站">				
+						<img src="/img/cart_cover.jpg" class="relateImg" alt="hexo搭建个人网站">
 					</a>
 				</li>											
 		
@@ -571,6 +589,13 @@ array = np.array([[ 0,  1,  2,  3,  4],                  [ 5,  6,  7,  8,  9],  
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+		
+
+		<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+		<script src="/plugin/toc/katelog.min.js"></script>
+
+		
 	
 		</main>
 		
