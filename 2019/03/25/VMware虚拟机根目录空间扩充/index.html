@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="空间拓展,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
-<meta name="keywords" content="Python3 Linux">
+<meta name="description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        $ fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
+<meta name="keywords" content="空间拓展">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VMware 虚拟机Linux空间拓展">
 <meta property="og:url" content="http://yoursite.com/2019/03/25/VMware虚拟机根目录空间扩充/index.html">
 <meta property="og:site_name" content="Damon">
-<meta property="og:description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
+<meta property="og:description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        $ fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-03-25T08:50:03.000Z">
+<meta property="og:updated_time" content="2019-03-25T09:27:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VMware 虚拟机Linux空间拓展">
-<meta name="twitter:description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
+<meta name="twitter:description" content="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小打开虚拟机。root登陆终端输入：        $ fdisk -l        “查看分区目录”        继续键入：                n                “ 命令 n 用于添加新分区 “">
 
 
 
@@ -274,6 +274,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/基础搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">基础搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -301,13 +323,13 @@
       
 
       
-        <h1 id="声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"><a href="#声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。" class="headerlink" title="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"></a>声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。</h1><p>关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小<br>打开虚拟机。root登陆<br>终端输入：<br>        fdisk -l<br>        “查看分区目录”<br>        继续键入：<br>                n<br>                “ 命令 n 用于添加新分区 “<br>        继续键入：<br>                p<br>                “命令 n 用于添加新分区 “<br>        继续键入：<br>                3<br>                “fdisk 会让你选择主分区的编号，如果已经有了主分区 sda1 ， sda2 ，那么编号就选3 ，即要创建的该分区为 sda3<br>                fdisk 又会让你选择该分区的开始值这个就是分区的 Start 值（ start cylinder ）；这里最好直接按回车，如果您输入了一个非默认的数字，可能会造成空间浪费”<br>        等待完成，继续键入：<br>                t<br>                “改变分区系统id”<br>        继续键入：<br>                3<br>                “指定分区号”<br>        继续键入：<br>                8e<br>                “指定要改成的id号，8e代表LVM”<br>        继续键入：w<br>                “保存”<br>终端输入：<br>        fdisk -l<br>        “查看新的分区大小以及支持格式”<br>终端输入：<br>        mkfs -t ext3 /dev/sda3<br>        “格式化分区目录”<br>终端输入：<br>        lvs<br>        pvcreate /dev/sda3<br>        vgextend centos /dev/sda3<br>        “其中 centos 是需要扩充的目录组   可以通过df -h 查看  例如我的 /dev/mapper/centos-root  centos 为组 ”<br>终端输入：<br>        vgdisplay<br>        “主要查看 Free  PE / Size       8960 / 35.00 GiB，说明我们最多可以有35.00 G的扩充空间”<br>终端输入：<br>        lvextend -L +34.7G /dev/centos/root /dev/sda3<br>        “扩充我们想要增加的大小，做好稍微余留一些 避免出现分区不足的错误“<br>终端输入：<br>        vim /etc/fstab<br>        “查看拓展组中 逻辑卷 的文件系统“<br>        e2fsck -f /dev/centos/root<br>        出现”/dev/mapper/centos-root is mounted.  e2fsck: 无法继续, 中止.” 继续进行</p>
+        <h1 id="声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"><a href="#声明-：本过程仅本人-VMware-虚拟机Linux系统-上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。" class="headerlink" title="声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。"></a>声明 ：本过程仅本人 VMware 虚拟机Linux系统 上运行成功，其他系统上不能保证，若出现数据丢失，概不负责。</h1><p>关闭虚拟机，进入设置页面，选择硬盘，增加到想要拓展的大小<br>打开虚拟机。root登陆<br>终端输入：<br>        $ fdisk -l<br>        “查看分区目录”<br>        继续键入：<br>                n<br>                “ 命令 n 用于添加新分区 “<br>        继续键入：<br>                p<br>                “命令 n 用于添加新分区 “<br>        继续键入：<br>                3<br>                “fdisk 会让你选择主分区的编号，如果已经有了主分区 sda1 ， sda2 ，那么编号就选3 ，即要创建的该分区为 sda3<br>                fdisk 又会让你选择该分区的开始值这个就是分区的 Start 值（ start cylinder ）；这里最好直接按回车，如果您输入了一个非默认的数字，可能会造成空间浪费”<br>        等待完成，继续键入：<br>                t<br>                “改变分区系统id”<br>        继续键入：<br>                3<br>                “指定分区号”<br>        继续键入：<br>                8e<br>                “指定要改成的id号，8e代表LVM”<br>        继续键入：w<br>                “保存”<br>终端输入：<br>        $ fdisk -l<br>        “查看新的分区大小以及支持格式”<br>终端输入：<br>        $ mkfs -t ext3 /dev/sda3<br>        “格式化分区目录”<br>终端输入：<br>        $ lvs<br>        $ pvcreate /dev/sda3<br>        $ vgextend centos /dev/sda3<br>        “其中 centos 是需要扩充的目录组   可以通过df -h 查看  例如我的 /dev/mapper/centos-root  centos 为组 ”<br>终端输入：<br>        $ vgdisplay<br>        “主要查看 Free  PE / Size       8960 / 35.00 GiB，说明我们最多可以有35.00 G的扩充空间”<br>终端输入：<br>        $ lvextend -L +34.7G /dev/centos/root /dev/sda3<br>        “扩充我们想要增加的大小，做好稍微余留一些 避免出现分区不足的错误“<br>终端输入：<br>        $ vim /etc/fstab<br>        “查看拓展组中 逻辑卷 的文件系统“<br>        $ e2fsck -f /dev/centos/root<br>        出现”/dev/mapper/centos-root is mounted.  e2fsck: 无法继续, 中止.” 继续进行</p>
 <pre><code>    如果是 逻辑卷文件系统 xfs:
     终端输入：
-            xfs_growfs  /dev/centos/root 
+            $ xfs_growfs  /dev/centos/root 
     如果是 逻辑卷文件系统 ext3:
     终端输入：
-            resize2fs /dev/centos/root 
+            $ resize2fs /dev/centos/root 
             输出如下 “
             meta-data=/dev/mapper/centos-root isize=512    agcount=4, agsize=2424320 blks
                     =                       sectsz=512   attr=2, projid32bit=1
@@ -321,7 +343,7 @@
             data blocks changed from 9697280 to 18741248
             ”
     终端输入：
-            df -h 
+            $ df -h 
             “查看内存情况”
 </code></pre><p>##ok！</p>
 
@@ -338,6 +360,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/空间拓展/" rel="tag"># 空间拓展</a>
+          
+        </div>
       
 
       
@@ -446,7 +474,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
@@ -457,7 +485,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
